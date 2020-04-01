@@ -1,1 +1,182 @@
-welcome to my site
+<!DOCTYPE html>
+<html style="" class=" js canvas canvastext no-touch rgba backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations cssgradients csstransforms csstransforms3d csstransitions fontface">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="Page-Enter" content="revealTrans(duration=5, transition=2)">
+    <meta http-equiv="Page-Exit" content="revealTrans(duration=5, transition=2)">
+    <title>生态圈</title>
+    <meta name="description" content="生态圈">
+    <link rel="stylesheet" type="text/css" href="basic.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style type="text/css">
+        li {
+            margin-top: 20px;
+            margin-bottom: 1.25rem;
+        }
+        
+        .li_content_div {
+            display: flex;
+            display: -webkit-flex;
+            /* flex: 1; */
+            width: 100%;
+        }
+        
+        .c1_ul_img {
+            display: flex;
+            flex-direction: column;
+            margin-left: 4%;
+        }
+        
+        .c1_ul_img span {
+            margin-left: 4px;
+        }
+        
+        .c1_ul_img img {
+            border: 1px solid rgba(237, 237, 237, 0.3);
+            max-width: 148px;
+            border-radius: 7px;
+            max-height: 6.25rem;
+            margin-top: 6px;
+        }
+        
+        .c1_ul_div {
+            margin-left: 8%;
+            margin-right: 4%;
+            margin-bottom: 4%;
+            /* padding: 10px 0 0 0 ; */
+            flex: auto;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        span {
+            font-size: 14px;
+            color: #8A8A8A;
+        }
+        
+        .c1_ul_div-top span:nth-child(2) {
+            margin-left: 14px;
+        }
+        
+        .c1_ul_div>span {
+            font-size: 20px;
+            color: #101010;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <!---头部---->
+        <div class="c1">
+            <div class="boxmain">
+                <div class="clearfix">
+                    <ul class="c1_ul">
+                        <!-- <li onclick="clickLiTagAction(111)">
+							<div class="li_content_div">
+								<div class="c1_ul_img">
+									<span>2020.12.12</span>
+									<img src="dfwl-shiyunlianwang.png" >
+								</div>
+								<div class="c1_ul_div">
+									<div class="c1_ul_div-top">
+										<span>管理员</span>
+										<span>广东通服</span>
+									</div>
+									<span>2018年中国智慧城市餐饮行业研究报告</span>
+								</div>
+							</div>
+							<hr width="92%" color="#F0F0F0">
+						</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var data = [{
+            knlgId: 46493,
+            title: "中科极光",
+            imgUrl: "中科极光.png",
+            autor: "管理员",
+            time: "2019.08.30"
+        }, {
+            knlgId: 46494,
+            title: "时代亿信",
+            imgUrl: "时代亿信.png",
+            autor: "管理员",
+            time: "2019.08.30"
+        }, {
+            knlgId: 46495,
+            title: "瀚思科技",
+            imgUrl: "韩思科技.png",
+            autor: "管理员",
+            time: "2019.08.30"
+        }, {
+            knlgId: 46496,
+            title: "国科嘉和",
+            imgUrl: "国科嘉和.png",
+            autor: "管理员",
+            time: "2019.08.30"
+        }, {
+            knlgId: 46497,
+            title: "Easy Stack",
+            imgUrl: "easystack.png",
+            autor: "管理员",
+            time: "2019.08.30"
+        }, {
+            knlgId: 46597,
+            title: "生态联盟双月刊第一期",
+            imgUrl: "双月刊.png",
+            autor: "管理员",
+            time: "2019.08.30"
+        }, ];
+
+        $(function() {
+            for (let obj of data) {
+                var imgPath = obj["imgUrl"];
+                var title = obj["name"];
+                var knlgId = obj["knlgId"];
+                var autor = obj["autor"];
+                var time = obj["time"];
+                var liTags = "<li onclick=\"clickLiTagAction(" + knlgId + ")\"><div class=\"li_content_div\"><div class=\"c1_ul_img\"><img src=" + imgPath + " ></div><div class=\"c1_ul_div\"><div class=\"c1_ul_div-top\"><span>" + autor + "</span><span>广东通服</span></div><span>" + obj["title"] + "</span></div></div><hr width=\"92%\" color=\"#F0F0F0\"></li>";
+                $(".c1_ul").append(liTags);
+                // console.log(obj)
+
+            }
+            // 渲染
+
+        });
+
+        // var tarUl = document.getElementById("c1_ul");
+        // tarUl.innerHTML = liTags;
+        // for (let obj of data) {
+        //     var imgPath = obj["imgUrl"];
+        //     var title = obj["name"];
+        //     var knlgId = obj["knlgId"];
+        //     var autor = obj["autor"];
+        //     var time = obj["time"];
+        //     $(".c1_ul").append(liTags);
+        //     // console.log(obj)
+        //     liTags = liTags + "<li onclick=\"clickLiTagAction(" + knlgId + ")\"><div class=\"li_content_div\"><div class=\"c1_ul_img\"><img src=" + imgPath + " ></div><div class=\"c1_ul_div\"><div class=\"c1_ul_div-top\"><span>" + autor + "</span><span>广东通服</span></div><span>" + obj["title"] + "</span></div></div><hr width=\"92%\" color=\"#F0F0F0\"></li>";
+        // }
+        // $(".c1_ul").append(liTags);
+        var liTags = "";
+
+        function clickLiTagAction(knlgId) {
+            // console.log(knlgId);
+            window.location.href = "http://10.202.246.37:8081/front/knlg/getKnlgById?knlgId=" + knlgId;
+        }
+    </script>
+</body>
+
+</html>
