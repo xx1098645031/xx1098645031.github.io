@@ -1,0 +1,257 @@
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+.jslink{color: #666}
+textarea { -webkit-appearance: none;}
+input{border-radius:0;}
+
+body{
+	margin:0 auto;
+	max-width:700px;
+}
+.top{
+	height:80px;
+	width:100%;
+	background:#ffffff;
+	position:fixed;
+	position:fixed;
+	left:0px;
+	top:0px;
+	z-index:9999;
+}
+
+.mobile-inner-header{
+	display:none;
+}
+.banner{
+
+}
+/*.banner .swiper-container img{*/
+/*    width:100%;*/
+/*}*/
+.banner .swiper-container img{
+    width:100%;
+    height: 165px;
+}
+.c1{
+	padding-top:25px;
+	padding-bottom:90px;
+}
+.c1_title{
+	width:325px;
+	height:78px;
+	margin:0 auto;
+}
+.boxmain{
+	max-width:1200px;
+	margin:0 auto;
+	padding:5px;
+	/* border-bottom: 1px solid #EAEAEA; */
+
+}
+.c1_list{
+
+	padding-top:30px;
+}
+.c1_list ul li{
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+	width:23%;
+	margin-bottom:30px;
+	text-align: center;
+}
+
+.c1_img{
+	overflow:hidden;
+	padding: 10px;
+	
+	/* border-radius: 7px; */
+}
+.c1_img img{
+	width:100%;
+	height:auto;
+	
+	box-shadow: 4px 8px 4px 1px #EDEDED;
+	border-radius: 7px;
+	border-left: 3px solid #F7F7F7;
+	border-top: 3px solid #F7F7F7; 
+	/* border:  3px solid #F7F7F7; */
+	/* border: #ECEDE9; */
+	/* border-width: 2;
+	border-color: red; */
+	
+	/* box-shadow: 2px 5px 2px 8px #E6E6E6, */
+	            
+}
+
+.libaiBottom {
+	margin-top:-11px;
+	font-family:"Arial";
+
+}
+.libaiBottom span{
+color:#c6c6c6;
+font-size: 0.8em;
+background-position:left;
+padding-left: 24px;
+margin-right:40px;
+}
+@media only screen and (max-width:1300px) and (min-width:100px) {
+	.Style_img img{
+		width:100%;
+		height:auto;
+	}
+	.style2_img img{
+		width:100%;
+		height:auto;
+	}
+}
+@media only screen and (max-width:1600px) and (min-width:1000px) {
+	.c1 .navigation-btn {
+    height: 100px;
+	border-bottom: 1px solid #dcdcdc;
+	}
+}
+@media only screen and (max-width:1300px) and (min-width:1000px) {
+
+}
+@media only screen and (max-width:1000px) and (min-width:640px) {
+	.mobile-inner-header{
+		display:block;
+	}
+	.banner{
+		
+	}
+	.c1 .navigation-btn {
+    height: 98px;
+	border-bottom: 1px solid #dcdcdc;
+	}
+	.top{
+		display:none;
+	}
+	body{
+		
+	}
+	.c1_list ul li{
+		float:left;
+		margin-left:1%;
+		margin-right:1%;
+		width:31%;
+		margin-bottom:30px;
+	}
+	.footer_top{
+		display:none;
+	}
+	.style2_des{
+		min-height:120px;
+	}
+}
+@media only screen and (max-width:640px) and (min-width:0px) {
+	.mobile-inner-header{
+		display:block;
+	}
+	.top{
+		display:none;
+	}
+	body{
+		
+	}
+	.banner{
+		
+	}
+	.flickerplate .arrow-navigation {
+		width:10%;
+	}
+	.c1_title{
+		width:200px;
+		height:40px;
+		margin:0 auto;
+	}
+	.c1_title_t1{
+		padding-top:12px;
+		font-size:22px;
+		font-family:"微软雅黑";
+		line-height:22px;
+	}
+	.c1_title_t1 i{
+		width: 4px;
+		height: 4px;
+		margin: 0 10px 5px 10px;
+}
+	.c1_title_t2{
+		font-size:0.8em;
+		width:120px;
+		margin:0 auto;
+	}
+	.c1_list ul li{
+		float:left;
+		margin-left:3%;
+		margin-right:1%;
+		width:45%;
+		margin-bottom:18px;
+	}
+	.c1{
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	.c1_list{
+		padding-top:10px;
+	}
+	.c1_titleText{
+		margin-top:-7px;
+		height:45px;
+		line-height:45px;
+		font-size:0.9em;
+	}
+	
+	.Style_list ul li{
+		width:48%;
+		margin-left:1%;
+		margin-right:1%;
+		margin-bottom:10px;
+	}
+	.style2_list ul li{
+		float:left;
+		width:48%;
+		margin-left:1%;
+		margin-right:1%;
+		margin-bottom:10px;
+	}
+	
+	.td_top ul li{
+		float:left;
+		width:48%;
+		margin-left:1%;
+		margin-right:1%;
+		margin-bottom:10px;
+	}
+	.arrow-navigation{
+		display:none;
+	}
+}
+@media only screen and (max-width:440px) and (min-width:0px) {
+	.style2_des{
+		min-height:130px;
+	}
+	.Style_list ul li{
+		width:100%;
+		margin-left:0%;
+		margin-right:0%;
+		margin-bottom:10px;
+	}
+	.style2_list ul li{
+		float:left;
+		width:100%;
+		margin-left:0%;
+		margin-right:0%;
+		margin-bottom:10px;
+	}
+	.td_top ul li{
+		float:left;
+		width:100%;
+		margin-left:0%;
+		margin-right:0%;
+		margin-bottom:10px;
+	}
+}
